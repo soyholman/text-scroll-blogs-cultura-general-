@@ -88,12 +88,21 @@ header {
 
   .container_image {
       /* Grab a free image from unsplash */
-     
-      background-size: 100vw auto;
-      background-position: center;
-      background-attachment: fixed;
-      /* position the second container below the first container */
-      top: 100vh;
+   
+        background-size: 100vw auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+  background-position: top;
+        background-attachment:fixed;
+    
+        /* position the second container below the first container */
+        top: 100vh;
+    }
+ 
+  .container_image,
+  .container_solid .title_wrapper h1{
+
+    background-repeat: no-repeat;
   }
 
   .container_image .title_wrapper h1 {
@@ -102,11 +111,46 @@ header {
 
   section {
       min-height: 100vh;
-      padding: 1em;
+      padding: 2em;
       margin: auto;
       max-width: 800px;
   }
 
+
+  .scrollDownSect {
+      position: absolute;
+      height: 80px;
+      width: 100vw;
+      bottom: 30px px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .scrollDownSect span {
+    animation: an 3s infinite;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+@keyframes an{
+
+
+    0% {
+            opacity: 0;
+            transform: translateY(200%);
+        }
+    
+        20% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 0;
+            transform: translateY(-200%);
+        }
+}
  figcaption {
       padding: 10px;
       color: #555;
