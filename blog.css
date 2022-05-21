@@ -91,7 +91,7 @@ header {
    
         background-size: 100vw auto;
         background-size: cover;
-        background-repeat: no-repeat;
+     
   background-position: top;
         background-attachment:fixed;
     
@@ -102,7 +102,7 @@ header {
   .container_image,
   .container_solid .title_wrapper h1{
 
-    background-repeat: no-repeat;
+    
   }
 
   .container_image .title_wrapper h1 {
